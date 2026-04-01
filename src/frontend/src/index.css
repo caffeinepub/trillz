@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --radius: 0.875rem;
+    /* Deep navy theme */
+    --background: 0.18 0.045 236;
+    --foreground: 0.97 0.005 236;
+    --card: 0.22 0.055 236;
+    --card-foreground: 0.97 0.005 236;
+    --popover: 0.25 0.06 236;
+    --popover-foreground: 0.97 0.005 236;
+    --primary: 0.68 0.175 54;
+    --primary-foreground: 0.12 0.02 236;
+    --secondary: 0.28 0.065 236;
+    --secondary-foreground: 0.97 0.005 236;
+    --muted: 0.24 0.05 236;
+    --muted-foreground: 0.65 0.03 236;
+    --accent: 0.47 0.14 145;
+    --accent-foreground: 0.97 0.005 236;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.32 0.06 236;
+    --input: 0.28 0.065 236;
+    --ring: 0.68 0.175 54;
+    --chart-1: 0.68 0.175 54;
+    --chart-2: 0.47 0.14 145;
+    --chart-3: 0.82 0.17 85;
+    --chart-4: 0.6 0.12 236;
+    --chart-5: 0.75 0.15 54;
+    --sidebar: 0.15 0.04 236;
+    --sidebar-foreground: 0.97 0.005 236;
+    --sidebar-primary: 0.68 0.175 54;
+    --sidebar-primary-foreground: 0.12 0.02 236;
+    --sidebar-accent: 0.22 0.055 236;
+    --sidebar-accent-foreground: 0.97 0.005 236;
+    --sidebar-border: 0.32 0.06 236;
+    --sidebar-ring: 0.68 0.175 54;
+    /* Custom tokens */
+    --navy-deep: 0.18 0.045 236;
+    --navy-mid: 0.22 0.055 236;
+    --navy-card: 0.27 0.065 236;
+    --orange: 0.68 0.175 54;
+    --orange-hover: 0.72 0.18 54;
+    --green-action: 0.47 0.14 145;
+    --rating-yellow: 0.82 0.17 85;
+    --text-dim: 0.72 0.025 236;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-family: "Bricolage Grotesque", sans-serif;
+  }
+
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
